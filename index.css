@@ -1,0 +1,17 @@
+* {
+    background-color: lightsteelblue;
+}
+
+h1, h2 {
+    color: rgb(150, 83, 47);
+}
+
+p {
+    color: #fa423d;
+    font-weight: bold;
+    padding: 2px;
+}
+
+img {
+    float: left;
+}
