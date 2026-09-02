@@ -1,0 +1,25 @@
+{
+  "name": "csw131",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K1ngHandy/CSW131.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/K1ngHandy/CSW131/issues"
+  },
+  "homepage": "https://github.com/K1ngHandy/CSW131#readme",
+  "devDependencies": {
+    "vite": "^8.2.2"
+  }
+}
