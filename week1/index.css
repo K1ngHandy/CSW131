@@ -2,16 +2,26 @@
     background-color: lightsteelblue;
 }
 
-h1 {
-    color: red;
+body {
+    margin: 0 auto;
+    padding: 0.9em;
+    max-width: 750px;
 }
 
-p {
-    color: #fa423d;
-    font-weight: bold;
-    padding: 2px;
+h1 {
+    font-size: 150%;
+    padding: 0.3em;
+    color: red;
 }
 
 img {
     float: left;
+    padding: 0.9em;
+}
+
+p {
+    display: block;
+    font-size: 120%;
+    margin-block-start: 0.9em;
+    margin-inline-start: 0px;
 }
