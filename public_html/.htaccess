@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Restricted"
+AuthBasicProvider external
+AuthExternal rrauth
+Require valid-user
