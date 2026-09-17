@@ -8,10 +8,14 @@ body {
     padding: 1em;
     max-width: 600px;
 }
-h1 {    
+h1 {
     font-size: 200%;
     color: navy;
     padding-bottom: .3em;
+}
+h2 {
+    font-size: 160%;
+    padding-bottom: 0.3rem;
 }
 img  {
     float: right;
