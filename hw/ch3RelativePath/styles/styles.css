@@ -1,0 +1,44 @@
+body {
+    padding: 3%;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav p {
+    margin: 0;
+    margin-left: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: slateblue;
+}
+
+h1, h2 {
+    color: blue;
+    padding-left: 2rem;
+}
+
+p {
+    padding-left: 1.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 3px;
+}
