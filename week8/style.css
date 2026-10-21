@@ -1,0 +1,83 @@
+
+/* Part 4: Custom properties */
+:root {
+    --primary-color: /* Add a color */;
+       
+}
+
+/* Part 1: Basic element selectors */
+body {
+    margin: 0;
+    padding: 20px;
+    /* Set the font family */
+
+}
+/* Class selector */
+.resource-card {
+    /* Add a border */
+
+    
+
+}
+/* ID selector */
+#page-title {
+    /* Set the h1 heading color*/
+    
+    /* Set the h1 heading color using var() defined in Part 4*/
+
+}
+
+/* Grouping selector */
+h2, h3 {
+    /* Set a consistent text color */
+
+}
+
+/* Descendant selector */
+nav a {
+    /* Style the navigation links */
+}
+
+/* Part 2: Pseudo-classes */
+a:hover {
+    /* Change link color on hover */
+
+}
+
+a:visited {
+    /* Set a different visited-link color */
+}
+
+.resource-card:hover {
+    /* Change the card background */
+    
+}
+
+a:focus {
+    /* Add a visible outline */
+
+}
+
+/* Part 3: Pseudo-elements */
+h2::before {
+    /*Add content "★ "*/
+
+}
+
+.resource-card p::first-letter {
+    /* Enlarge and bold the first letter */
+
+}
+
+footer::after {
+    /* Add a short decorative string " | Keep Learning!" */
+    
+}
+
+/* Part 5: !important */
+.highlight {
+    color: blue;
+}
+
+/* Add another rule that sets the text to red
+   using !important. Explain the result in a comment. */
