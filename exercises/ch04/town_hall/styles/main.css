@@ -37,6 +37,10 @@ header {
 
 footer {
     p {
-        float: center;
+        text-align: center;
     }
+}
+
+.large {
+    font-size: 125%;
 }
