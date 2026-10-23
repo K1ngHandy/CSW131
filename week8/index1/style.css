@@ -14,7 +14,7 @@ body {
 
 }
 
-/* Class selector */
+/* Part 1: Class selector */
 .resource-card {
     /* Add a border */
     border-bottom: 2px solid black;
@@ -22,23 +22,21 @@ body {
 
 }
 
-/* ID selector */
+/* Part 1: ID selector */
 #page-title {
     /* Set the h1 heading color*/
-
-
-    /* Set the h1 heading color using var() defined in Part 4*/
+    /* Part 4: Set the h1 heading color using var() defined in Part 4*/
     color: var(--primary-color);
 }
 
-/* Grouping selector */
+/* Part 1: Grouping selector */
 h2,
 h3 {
     /* Set a consistent text color */
     color: maroon;
 }
 
-/* Descendant selector */
+/* Part 1: Descendant selector */
 nav a {
     /* Style the navigation links */
     text-decoration: none;
