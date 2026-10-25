@@ -1,57 +1,75 @@
+/* Step 31 – create custom property named accent color for root */
+/* Step 34 – change value of accent color to hex value #4d0080 */
+/* Step 35 – change value of accent color back to previous value */
 :root {
     --accent-color: #800000;
 }
 
+/* Step 5 – add style rules for body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
 }
 
+/* Step 6 – add style rules for a link that has focus or mouse hovering over it */
 a:focus,
 a:hover {
     font-style: italic;
+    /* Step 32 – replace every occurrence of hex value #800000 with custom property from step 31 */
     color: var(--accent-color);
 }
 
+/* Step 7 – add style rule for h1 element */
 h1 {
     font-size: 150%;
 }
 
+/* Step 8 – add style rule for h2 elements */
 h2 {
     font-size: 130%;
+    /* Step 32 – replace every occurrence of hex value #800000 with custom property from step 31 */
     color: var(--accent-color);
 }
 
+/* Step 9 – add style rule for h3 elements */
 h3 {
     font-size: 105%;
 }
 
+/* Step 11 – add style rule for header element */
 header {
+
+    /* Step 12 – add nested style rules for h2 elements */
     h2 {
         font-size: 170%;
         text-indent: 30px;
     }
 
+    /* Step 13 – add nested style rules for h3 elements */
     h3 {
         font-size: 130%;
         text-indent: 30px;
     }
 
+    /* Step 14 – add nested style rule for img element */
     img {
         float: left;
     }
 }
 
+/* Step 18 – add style rule for main element */
 main {
     clear: left;
 }
 
+/* Step 21 – add style rule for footer and nested style rule for p element */
 footer {
     p {
         text-align: center;
     }
 }
 
+/* Step 29 – create style rule for class large */
 .large {
     font-size: 125%;
 }
