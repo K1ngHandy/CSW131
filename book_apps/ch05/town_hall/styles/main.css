@@ -26,16 +26,16 @@ li, p { font-size: 95%; }
 a, em { font-weight: bold; }
 a:link, a:visited { color: var(--dark);}
 a:hover, a:focus { color: var(--light); }
-ul { 
-	line-height: 1.5; 
+ul {
+	line-height: 1.5;
 	margin-left: 2em;
 }
 
 /* the styles for the header */
 header {
 	text-align: center;
-	& img { 
-		float: left; 
+	& img {
+		float: left;
 		margin: .5em 0;
 	}
 	& h2 {
@@ -51,11 +51,11 @@ header {
 }
 
 /* the styles for the main content */
-main { 
-	clear: left; 
+main {
+	clear: left;
 	padding-bottom: .5em;
-	& a.date_passed { 
-		color: gray; 
+	& a.date_passed {
+		color: gray;
 	}
 }
 
