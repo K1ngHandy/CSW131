@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+<!-- 1-1: include html document structure -->
 <html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>French Flag</title>
+        <!-- 1-2: add a style tag inside head section -->
         <style>
             body {
+                /* 2-1: set webpage background color */
+                background-color: rgb(115, 115, 210);
+                /* 2-2: add a background image */
                 background-image: url(../ch05/images/croissant.jpg);
-                /* background-color: rgb(115, 115, 210); */
                 background-size: cover;
                 height: 600px;
                 background-repeat: no-repeat;
@@ -22,15 +26,22 @@
             }
 
             p {
+                /* 3-1: set <p> width to 300px */
                 width: 300px;
+                /* 3-2: set <p> height to 200px */
                 height: 200px;
+                /* 3-3: use background image with linear gradient */
+                /* 3-4: create 3 vertical stripes: red, blue, and white */
+                /* 3-5: make each stripe ~1/3 of flag's width */
                 background-image: linear-gradient(to right, blue 0%, blue 33.33%, white 33.33%, white 66.66%, red 66.66%, red 100%);
             }
         </style>
     </head>
 
     <body>
+        <!-- 1-3: include one main element inside the body -->
         <main>
+            <!-- 1-4: nest one empty p element inside main -->
             <p></p>
         </main>
     </body>
