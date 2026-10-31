@@ -43,31 +43,47 @@ h3 {
 
 /* the styles for the header */
 header {
+	/* Step 12 – Delete text-indent declarations (commented out). Then for img element, set top & bottom margins to 0.75em and left & right margins to 1em */
 	& h2 {
 		font-size: 175%;
-		text-indent: 30px;
+		/* text-indent: 30px; */
+		padding-bottom: 0;
 	}
 
 	& h3 {
 		font-size: 130%;
 		font-style: italic;
-		text-indent: 30px;
+		/* text-indent: 30px; */
+		padding-bottom: 1em;
 	}
 
 	& img {
 		float: left;
+		margin: 0.75em 1em;
 	}
 	/* Step 9 – Add same bottom border as body to header */
 	border-bottom: var(--border-style);
+	/* Step 16 – Add a linear gradient as a background for the header */
+	background: linear-gradient(to right, #f6bb73 0%, white 24%, white 78%, #f6bb73 100%);
 }
 
 /* the styles for the main content */
 main {
 	clear: left;
+	/* Step 13 – Add 1em of padding to right, left, and bottom of main element */
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
 	h1 {
 		/* Step 10 – Add top and bottom borders to h1 element in main – same style as body and header */
 		border-top: var(--border-style);
 		border-bottom: var(--border-style);
+	}
+	/* Step 17 – Add a 4 pixel double border with rounded corners around each speaker image in main, with color the same as other borders */
+	img {
+		border: 4px double;
+		border-radius: 15px;
+		border-color: var(--accent-color);
 	}
 }
 
@@ -90,6 +106,9 @@ footer {
 	& p {
 		text-align: center;
 		color: white;
+		/* Step 14 – Set top and bottom padding of footer p element to 1em */
+		padding-top: 1em;
+		padding-bottom: 1em;
 	}
 	/* Step 11 – Set background color of footer to same color as borders */
 	background-color: var(--accent-color);
@@ -98,4 +117,10 @@ footer {
 /* CSS class */
 .large {
 	font-size: 125%;
+}
+
+/* Step 15 – Italicize the blockquote element. Then use padding to indent this */
+blockquote {
+	font-style: italic;
+	padding-left: 2em;
 }
