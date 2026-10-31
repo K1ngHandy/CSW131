@@ -2,6 +2,7 @@
 :root {
 	--accent-color: #800000;
 	/* could also be coded #800 */
+	--border-style: solid 2px var(--accent-color);
 }
 
 /* Step 3 – Reset selector */
@@ -15,6 +16,10 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
+	/* Step 8 – Set width to 80%, margin to auto, and add 2-pixel border that uses accent color */
+	width: 80%;
+	margin: auto;
+	border: var(--border-style);
 }
 
 a:hover,
@@ -52,11 +57,18 @@ header {
 	& img {
 		float: left;
 	}
+	/* Step 9 – Add same bottom border as body to header */
+	border-bottom: var(--border-style);
 }
 
 /* the styles for the main content */
 main {
 	clear: left;
+	h1 {
+		/* Step 10 – Add top and bottom borders to h1 element in main – same style as body and header */
+		border-top: var(--border-style);
+		border-bottom: var(--border-style);
+	}
 }
 
 /* Step 5 – Set top and bottom padding for headings, paragraphs, and unordered lists */
@@ -77,7 +89,10 @@ ul {
 footer {
 	& p {
 		text-align: center;
+		color: white;
 	}
+	/* Step 11 – Set background color of footer to same color as borders */
+	background-color: var(--accent-color);
 }
 
 /* CSS class */
