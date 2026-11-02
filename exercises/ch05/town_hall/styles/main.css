@@ -43,17 +43,16 @@ h3 {
 
 /* the styles for the header */
 header {
-	/* Step 12 – Delete text-indent declarations (commented out). Then for img element, set top & bottom margins to 0.75em and left & right margins to 1em */
+
+	/* Step 12 – Delete text-indent declarations. Then for img element, set top & bottom margins to 0.75em and left & right margins to 1em. Then set the bottom paddings for the h2 element to 0 and h3 to 1em. */
 	& h2 {
 		font-size: 175%;
-		/* text-indent: 30px; */
 		padding-bottom: 0;
 	}
 
 	& h3 {
 		font-size: 130%;
 		font-style: italic;
-		/* text-indent: 30px; */
 		padding-bottom: 1em;
 	}
 
@@ -61,6 +60,7 @@ header {
 		float: left;
 		margin: 0.75em 1em;
 	}
+
 	/* Step 9 – Add same bottom border as body to header */
 	border-bottom: var(--border-style);
 	/* Step 16 – Add a linear gradient as a background for the header */
@@ -74,11 +74,13 @@ main {
 	padding-right: 1em;
 	padding-left: 1em;
 	padding-bottom: 1em;
+
 	h1 {
 		/* Step 10 – Add top and bottom borders to h1 element in main – same style as body and header */
 		border-top: var(--border-style);
 		border-bottom: var(--border-style);
 	}
+
 	/* Step 17 – Add a 4 pixel double border with rounded corners around each speaker image in main, with color the same as other borders */
 	img {
 		border: 4px double;
@@ -105,11 +107,13 @@ ul {
 footer {
 	& p {
 		text-align: center;
+		/* Step 11 (continued) – Set font color of nested paragraph in footer to white */
 		color: white;
 		/* Step 14 – Set top and bottom padding of footer p element to 1em */
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
+
 	/* Step 11 – Set background color of footer to same color as borders */
 	background-color: var(--accent-color);
 }
