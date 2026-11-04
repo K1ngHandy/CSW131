@@ -8,7 +8,7 @@
 /* reset */
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ li, p { font-size: 95%; }
 a, em { font-weight: bold; }
 a:link, a:visited { color: var(--dark); }
 a:hover, a:focus { color: var(--light); }
-ul { margin-left: 2em; }  
+ul { margin-left: 2em; }
 
 /* the styles for the header */
 header {
@@ -45,8 +45,8 @@ header {
         color: var(--light);
         padding: 0;
     }
-    & h3 { 
-        font-style: italic; 
+    & h3 {
+        font-style: italic;
         padding-bottom: 1em;
     }
 }
@@ -71,7 +71,7 @@ aside {
     height: fit-content;
     padding: 1em 1.5em;
     margin: 1em 0 1em 1.5em;
-    border-radius: 25px;    
+    border-radius: 25px;
     & h2 { padding: 0; }
     & h3 { color: var(--dark); }
 }
