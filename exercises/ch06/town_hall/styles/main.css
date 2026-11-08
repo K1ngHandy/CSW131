@@ -90,11 +90,14 @@ main {
 	& section {
 		flex-basis: 75%;
 		margin: 1em auto;
-	}
 
-	& h1 {
-		border-top: 2px solid var(--accent-color);
-		border-bottom: 2px solid var(--accent-color);
+		/* Step 14 – Add nested style rule for img in section element that floats the img to the right */
+		& img {
+			float: right;
+			/* Step 15 – Adjust margins and padding as needed */
+			margin-left: 0.3em;
+			padding: 0;
+		}
 	}
 
 	& blockquote {
@@ -106,6 +109,13 @@ main {
 		border: 4px double var(--accent-color);
 		border-radius: 10px;
 	}
+}
+
+/* Step 12 – Create a style rule for article class */
+.featured {
+	/* Step 13 – Copy border-top and -bottom style rule from nested h1 element to featured class, and delete nested h1 rule */
+	border-top: 2px solid var(--accent-color);
+	border-bottom: 2px solid var(--accent-color);
 }
 
 /* the styles for the footer */
