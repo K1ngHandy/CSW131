@@ -94,6 +94,7 @@ main {
 	& aside {
 		flex-basis: 25%;
 		margin: 0 auto;
+		padding-left: 3px;
 	}
 
 	& section {
@@ -108,6 +109,24 @@ main {
 			padding: 0;
 			/* Step 17-2 – Make featured speaker image scalable */
 			width: clamp(100px 100% 250px);
+		}
+	}
+
+	/* Step 4 – Add a style rule for the speaker class */
+	& .speaker {
+		& h1 {
+			/* Step 5-1 – Add a nested style rule in speaker class for that sets h1 element color to the accent color */
+			color: var(--accent-color);
+		}
+
+		& h2 {
+			/* Step 5-2 – Add a nested style rule in speaker class for that sets h2 element color to black */
+			color: black;
+		}
+
+		& p {
+			/* Step 5-3 – Add a nested style rule in speaker class for that sets paragraph element top and bottom padding to 0.5em */
+			padding: 0.5em 0;
 		}
 	}
 
