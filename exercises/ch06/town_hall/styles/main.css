@@ -15,8 +15,12 @@
 /* default styles */
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 100%;
-	width: 80%;
+	/* Step 16-2 – Set font size to 90% plus 0.2 of viewport width */
+	font-size: calc(90% + 0.2vw);
+	/* Step 16-1 – Set width to 80% with a maximum width of 1024 pixels */
+	width: max(80%, 1024px);
+	/* Step 16-3 – Set line height to 1.5 */
+	line-height: 1.5;
 	margin: auto;
 	border: 2px solid var(--accent-color);
 }
@@ -32,7 +36,8 @@ h2,
 h3,
 p,
 ul {
-	padding: .5em 0;
+	/* Step 16-3 – Change the default top and bottom padding for headings, paragraphs, and unordered lists to 0.25em */
+	padding: .25em 0;
 }
 
 h1 {
@@ -56,6 +61,8 @@ ul {
 header {
 	border-bottom: 2px solid var(--accent-color);
 	background-image: linear-gradient(30deg, var(--gradient-color) 0%, white 30%, white 65%, var(--gradient-color) 100%);
+	/* Step 16-3 – Set the line height in the header element to 1.2 */
+	line-height: 1.2;
 
 	& h2 {
 		font-size: 175%;
@@ -71,6 +78,8 @@ header {
 	& img {
 		float: left;
 		margin: .75em 1em;
+		/* Step 17-1 – Make logo image scalable */
+		width: clamp(40px 100% 80px);
 	}
 }
 
@@ -97,6 +106,8 @@ main {
 			/* Step 15 – Adjust margins and padding as needed */
 			margin-left: 0.3em;
 			padding: 0;
+			/* Step 17-2 – Make featured speaker image scalable */
+			width: clamp(100px 100% 250px);
 		}
 	}
 
@@ -108,6 +119,8 @@ main {
 	& img {
 		border: 4px double var(--accent-color);
 		border-radius: 10px;
+		/* Step 17-3 – Make guest speaker images scalable */
+		width: clamp(40px 100% 75px);
 	}
 }
 
