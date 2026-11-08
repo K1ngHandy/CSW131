@@ -101,6 +101,13 @@ main {
 		flex-basis: 75%;
 		margin: 1em auto;
 
+		/* Step 12 – Create a style rule for featured class */
+		& .featured {
+			/* Step 13 – Copy border-top and -bottom style rule from nested h1 element in main to featured class, and delete nested h1 rule */
+			border-top: 2px solid var(--accent-color);
+			border-bottom: 2px solid var(--accent-color);
+		}
+
 		/* Step 14 – Add nested style rule for img in section element that floats the img to the right */
 		& img {
 			float: right;
@@ -112,21 +119,22 @@ main {
 		}
 	}
 
-	/* Step 4 – Add a style rule for the speaker class */
-	& .speaker {
+	/* Step 4 (6-2) – Add a style rule for the speaker class */
+	.speaker {
 		& h1 {
-			/* Step 5-1 – Add a nested style rule in speaker class for that sets h1 element color to the accent color */
+			/* Step 5-1 (6-2) – Add a nested style rule in speaker class for that sets h1 element color to the accent color */
 			color: var(--accent-color);
 		}
 
 		& h2 {
-			/* Step 5-2 – Add a nested style rule in speaker class for that sets h2 element color to black */
+			/* Step 5-2 (6-2) – Add a nested style rule in speaker class for that sets h2 element color to black */
 			color: black;
 		}
 
 		& p {
-			/* Step 5-3 – Add a nested style rule in speaker class for that sets paragraph element top and bottom padding to 0.5em */
-			padding: 0.5em 0;
+			/* Step 5-3 (6-2) – Add a nested style rule in speaker class that sets paragraph element top and bottom padding to 0.5em */
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
 		}
 	}
 
@@ -143,12 +151,6 @@ main {
 	}
 }
 
-/* Step 12 – Create a style rule for article class */
-.featured {
-	/* Step 13 – Copy border-top and -bottom style rule from nested h1 element to featured class, and delete nested h1 rule */
-	border-top: 2px solid var(--accent-color);
-	border-bottom: 2px solid var(--accent-color);
-}
 
 /* the styles for the footer */
 footer {
