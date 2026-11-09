@@ -6,24 +6,38 @@
 	<title>Horizontal nav</title>
     <link rel="stylesheet" href="main.css">
     <style>
+        main {
+            padding-top: 1em;
+        }
         /* nav menu */
         nav {
             background-color: black;
         }
         ul {
             display: flex;
-            list-style-type: none; 
+            list-style-type: none;
         }
-        li { 
-            padding: .5em 1em; 
+        li {
+            margin: 0.25em;
         }
         a {
             text-decoration: none;
             color: white;
+            display: block;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+        }
+        a:hover, a:focus {
+            text-decoration: underline;
+        }
+        a.current {
+            color: black;
+            background-color: lightgray;
+            text-decoration: none;
         }
     </style>
 </head>
-	
+
 <body>
     <header>
         <h1>San Joaquin Valley Town Hall</h1>
@@ -32,7 +46,7 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Speakers</a></li>
-            <li><a href="#">About Us</a></li> 
+            <li><a href="#">About Us</a></li>
         </ul>
     </nav>
     <main>
